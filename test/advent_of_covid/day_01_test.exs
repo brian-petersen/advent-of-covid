@@ -224,10 +224,7 @@ defmodule AdventOfCovid.Day01Test do
       2002
     ]
 
-    result1 = Day01.fix_report(values, 2020)
-    result2 = Day01.fix_report2(values, 2020)
-
-    IO.inspect("Day 01 Puzzle 1: #{result1}")
-    IO.inspect("Day 01 Puzzle 2: #{result2}")
+    assert Day01.fix_report(values, 2020) == 927_684
+    assert Day01.fix_report2(values, 2020) == 292_093_004
   end
 end
